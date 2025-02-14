@@ -1,6 +1,6 @@
 "use strict";
 
-import { PrintNode } from "./parser";
+import { PrintNode } from "./parser.js";
 
 interface Link {
   source: string;

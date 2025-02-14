@@ -1,6 +1,6 @@
 "use strict";
 
-import { substrait } from "./generated/definitions";
+import { substrait } from "./generated/definitions.js";
 
 const JOIN_TYPES = [
   "unspecified",

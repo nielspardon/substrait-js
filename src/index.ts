@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-specifier-resolution=node
+#!/usr/bin/env node
 
-export * from "./parser";
-export * from "./cli";
+export * from "./parser.js";
+export * from "./cli.js";

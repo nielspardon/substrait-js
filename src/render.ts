@@ -3,7 +3,7 @@
 import { JSDOM } from "jsdom";
 import { instance } from "@viz-js/viz";
 
-import { Link } from "./graph";
+import { Link } from "./graph.js";
 
 function renderGraph(edges: Link[]): Promise<string> {
   const dom = new JSDOM();

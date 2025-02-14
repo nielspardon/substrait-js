@@ -31,7 +31,7 @@ npm run build
 ```
 
 ## Visualization
-substrait-JS provides a CLI tool for exporting graph visualization of substrait JSON and binary plans. The tool currently uses the `--experimental-specifier-resolution` flag for module resolution. The  visualization functions are the required helper methods for the [substrait-fiddle](https://github.com/voltrondata/substrait-fiddle) tool.
+substrait-JS provides a CLI tool for exporting graph visualization of substrait JSON and binary plans. The  visualization functions are the required helper methods for the [substrait-fiddle](https://github.com/voltrondata/substrait-fiddle) tool.
 
 The tool uses [viz-js](https://github.com/mdaines/viz-js) for rendering plots on JSDOM using [Graphviz](https://graphviz.org/)'s DOT language.
 

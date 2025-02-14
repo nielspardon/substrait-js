@@ -3,10 +3,10 @@ import { Command } from "commander";
 import { readFileSync } from "fs";
 import { writeFile } from "fs/promises";
 
-import { substrait } from "./generated/definitions";
-import { SubstraitParser } from "./parser";
-import { buildGraph } from "./graph";
-import { renderGraph } from "./render";
+import { substrait } from "./generated/definitions.js";
+import { SubstraitParser } from "./parser.js";
+import { buildGraph } from "./graph.js";
+import { renderGraph } from "./render.js";
 
 const program = new Command();
 
