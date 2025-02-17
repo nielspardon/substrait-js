@@ -15,10 +15,11 @@
     "proto": "pbjs -w scripts/wrapper.js --target static-module --path substrait-spec/proto -o dist/generated/definitions.js substrait/plan.proto",
     "transpile": "tsc",
     "transpileProto": "pbts -o src/generated/definitions.d.ts dist/generated/definitions.js",
-    "prepare": "npm run clean-proto && npm run proto && npm run transpileProto",
+    "prepare": "npm run clean-proto && npm run proto && npm run transpileProto && if [ ! -f ./dist/index.js ]; then npm run make-dist && npm run transpile; fi",
     "lint": "eslint '**/*.ts'",
     "lint:fix": "npm run lint -- --fix",
-    "test": "npm run build && jest"
+    "test": "npm run build && jest",
+    "postinstall": "if [ ! -d ./substrait-spec ]; then git init && git submodule add https://github.com/substrait-io/substrait.git substrait-spec && git submodule update --init --recursive && git submodule; fi"
   },
   "author": "",
   "license": "Apache-2.0",
